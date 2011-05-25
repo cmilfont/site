@@ -49,7 +49,10 @@ app.configure(function(){
 
 app.get('/', function(req, res) {
   var template = req.query['_escaped_fragment_'] || "home";
-  res.render(template.replace('/',''));
+  if(template !== "home") {
+     template = template.replace('/','');
+  }
+  res.render(template);
 });
 
 
