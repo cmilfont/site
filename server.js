@@ -52,7 +52,7 @@ app.get('/', function(req, res) {
   /*if(template !== "home") {
      template = template.replace('/','');
   }*/
-  res.render(template + "/");
+  res.render(template);
 });
 
 
