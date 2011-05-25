@@ -1,0 +1,38 @@
+html {background: #000 url(images/bg.jpg) no-repeat center top; font-family: sans-serif;}
+body {width: 900px;margin-left:auto;margin-right: auto;}
+
+img {border:0;}
+img:hover {border:0;}
+a {text-decoration: none;color: #7DC6F0;}
+a:hover {text-decoration: underline;}
+#nav {float: left; width: 100%; color:#fff;}
+#stage {margin-top: 5em;}
+#stage .container .projects .project {float: left;margin: 20px;}
+.card {background: #222;}
+
+.opacidade {
+  -khtml-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -moz-opacity: 0.6; 
+  opacity: 0.6; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: Alpha(Opacity=60);
+}
+
+.selected {
+  -khtml-opacity: 1;
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: Alpha(Opacity=100);
+}
+
+.service {color:#fff; text-align: center; background: #222; margin-top: -10px; padding-top: 0; height: 25px;}
+footer {width: 100%; float: left; padding-top: 3em; margin-top: 3em; padding-bottom: 1.5em; color:#FFF;}
+footer .byline, footer .menu { float: left; width: 215px; margin-right: 10px; }
+footer .byline h4, footer .menu h4 { margin-bottom: 0; color:#FFF;}
+footer .byline p, footer .menu p { font-size: 0.8em; line-height: 1.875em; color: }
+footer .byline .nav, footer .menu .nav { padding-left: 0; list-style-type: none; }
+footer .byline .nav li, footer .menu .nav li { font-size: 0.8em; line-height: 1.875em; }
+footer #menu-3 { margin-right: 0; }
