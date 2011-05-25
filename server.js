@@ -46,7 +46,6 @@ app.configure(function(){
     app.use(express.errorHandler({ showStack: true }));
 });
 
-
 app.get('/', function(req, res) {
   var template = req.query['_escaped_fragment_'] || "home";
   res.render(template.replace('/',''));
