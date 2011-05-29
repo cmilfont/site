@@ -19,12 +19,23 @@ app.get('/', function(req, res) {
   res.render(template.replace('/',''));
 });
 
+['/home', '/consulting', '/eventos', '/universitas', '/mapa'].forEach(function(rota){
+  app.get(rota, function(req, res) {
+    res.render(rota.replace('/',''));
+  });
+});
+
+app.get("/projetos", function(req, res){
+    var url = 'https://github.com/api/v2/json/repos/show/milfont';
+    res.render("projetos");
+});
 
 app.use(express.errorHandler({ showStack: true }));
 app.use(express.staticProvider(__dirname));
 
 app.listen(8001);
 */
+
 
 var express = require('express'),
   crypto = require('crypto');
@@ -49,6 +60,17 @@ app.configure(function(){
 app.get('/', function(req, res) {
   var template = req.query['_escaped_fragment_'] || "home";
   res.render(template.replace('/',''));
+});
+
+['/home', '/consulting', '/eventos', '/universitas', '/mapa'].forEach(function(rota){
+  app.get(rota, function(req, res) {
+    res.render(rota.replace('/',''));
+  });
+});
+
+app.get("/projetos", function(req, res){
+    var url = 'https://github.com/api/v2/json/repos/show/milfont';
+    res.render("projetos");
 });
 
 
