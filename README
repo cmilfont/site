@@ -1,0 +1,3 @@
+## Instalar pacotes
+cd site/
+npm install

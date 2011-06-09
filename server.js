@@ -64,11 +64,13 @@ app.get('/', function(req, res) {
 
 ['/home', '/consulting', '/eventos', '/universitas', '/mapa'].forEach(function(rota){
   app.get(rota, function(req, res) {
+    console.log("entrou?", req.params);
     res.render(rota.replace('/',''));
   });
 });
 
 app.get("/projetos", function(req, res){
+    console.log("entrou em projeto? ", req.params);
     var url = 'https://github.com/api/v2/json/repos/show/milfont';
     res.render("projetos");
 });
